@@ -16,7 +16,10 @@
     "utils/"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "exit 0",
+    "lint": "eslint -c ../../.eslintrc.js .",
+    "test": "exit 0",
+    "typecheck": "exit 0"
   },
   "peerDependencies": {
     "babel-eslint": "^8.0.0 || ^9.0.0 || ^10.0.0",

@@ -6,7 +6,10 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jest"
+    "build": "exit 0",
+    "lint": "eslint -c ../../.eslintrc.js .",
+    "test": "NODE_ENV=test jest",
+    "typecheck": "exit 0"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.0.0",

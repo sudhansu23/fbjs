@@ -7,12 +7,12 @@
   "scripts": {
     "build": "gulp build",
     "postbuild": "check-lib-requires lib",
-    "lint": "eslint .",
+    "lint": "eslint -c ../../.eslintrc.js .",
     "prepublish": "yarn run build",
     "pretest": "check-dev-engines package.json",
     "test": "NODE_ENV=test jest",
     "test-babel-presets": "cd babel-preset && yarn install && yarn test",
-    "flow": "flow check src"
+    "typecheck": "flow check src"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

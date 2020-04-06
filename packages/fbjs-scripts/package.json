@@ -19,5 +19,11 @@
   "bin": {
     "check-dev-engines": "./node/check-dev-engines.js",
     "check-lib-requires": "./node/check-lib-requires.js"
+  },
+  "scripts": {
+    "build": "exit 0",
+    "lint": "eslint -c ../../.eslintrc.js .",
+    "test": "exit 0",
+    "typecheck": "exit 0"
   }
 }

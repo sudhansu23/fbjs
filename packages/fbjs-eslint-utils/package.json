@@ -13,5 +13,11 @@
     "globals.js",
     "index.js",
     "shared.js"
-  ]
+  ],
+  "scripts": {
+    "build": "exit 0",
+    "lint": "eslint -c ../../.eslintrc.js .",
+    "test": "exit 0",
+    "typecheck": "exit 0"
+  }
 }

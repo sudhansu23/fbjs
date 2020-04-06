@@ -5,7 +5,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "build": "exit 0",
+    "lint": "eslint -c ../../.eslintrc.js .",
+    "test": "jest",
+    "typecheck": "exit 0"
   },
   "files": [
     "LICENSE",
