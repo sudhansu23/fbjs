@@ -6,19 +6,19 @@
   "repository": "facebook/fbjs",
   "scripts": {
     "build": "gulp build",
-    "postbuild": "node node_modules/fbjs-scripts/node/check-lib-requires.js lib",
+    "postbuild": "check-lib-requires lib",
     "lint": "eslint .",
     "prepublish": "yarn run build",
-    "pretest": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json",
+    "pretest": "check-dev-engines package.json",
     "test": "NODE_ENV=test jest",
     "test-babel-presets": "cd babel-preset && yarn install && yarn test",
     "flow": "flow check src"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "babel-preset-fbjs": "file:../babel-preset-fbjs",
+    "babel-preset-fbjs": "^3.3.0",
     "del": "^2.2.0",
-    "fbjs-scripts": "file:../fbjs-scripts",
+    "fbjs-scripts": "^1.2.0",
     "flow-bin": "^0.99.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",

@@ -15,5 +15,9 @@
     "plugin-error": "^0.1.2",
     "semver": "^5.1.0",
     "through2": "^2.0.0"
+  },
+  "bin": {
+    "check-dev-engines": "./node/check-dev-engines.js",
+    "check-lib-requires": "./node/check-lib-requires.js"
   }
 }
